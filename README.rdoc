@@ -1,6 +1,9 @@
 = pt
 
-Description goes here.
+Scratching an itch I had with Pivotal Tracker API
+
+Currently, all it does is list the current iteration and filters on open cards that are bugs.  This
+most likely isn't useful to anyone but me.  Feel free to fork and criticize.
 
 == Note on Patches/Pull Requests
  

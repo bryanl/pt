@@ -5,13 +5,15 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "pt"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Easy access to pivotal tracker}
+    gem.description = %Q{Easy access to pivotal tracker that allows you to happy at the CLI}
     gem.email = "bryan@osesm.com"
     gem.homepage = "http://github.com/bryanl/pt"
     gem.authors = ["bryanl"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
     gem.add_development_dependency "yard", ">= 0"
+    gem.add_dependency 'httparty', '~> 0.6.0'
+    gem.add_dependency 'thor'
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new

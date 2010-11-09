@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'pt'
+require 'pp'
+
+Pt::CLI.start
