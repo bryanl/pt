@@ -30,6 +30,8 @@ Gem::Specification.new do |s|
      "lib/pt/card.rb",
      "lib/pt/iteration.rb",
      "lib/pt/summary.rb",
+     "pt.gemspec",
+     "spec/pt/card_spec.rb",
      "spec/pt_spec.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb"
