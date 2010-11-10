@@ -18,10 +18,11 @@ module Pt
       self
     end
 
-    def features_with_value
-      parsed_response = get("#{project}/iterations/current").parsed_response
+    def features_with_value(accepted = false)
+      parsed_response = raw_features_with_value.parsed_response
       iteration = Iteration.new(parsed_response["iterations"].first)
-      iteration.features.find_all(&:accepted?)
+
+      accepted ? iteration.features.find_all(&:accepted?) : iteration.features
     end
 
     def bug_value
@@ -31,6 +32,10 @@ module Pt
           stories << Card.new(story_options)
         end
       end
+    end
+
+    def raw_features_with_value
+      get("#{project}/iterations/current")
     end
 
     private

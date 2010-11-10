@@ -4,7 +4,10 @@ require 'rubygems'
 require 'pt'
 require 'spec'
 require 'spec/autorun'
+require 'fakeweb'
 
 Spec::Runner.configure do |config|
-  
+  config.before(:all) do
+    FakeWeb.allow_net_connect = false
+  end
 end

@@ -12,6 +12,7 @@ begin
     gem.authors = ["bryanl"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
     gem.add_development_dependency "yard", ">= 0"
+    gem.add_development_dependency "fakeweb", "1.3.0"
     gem.add_dependency 'httparty', '~> 0.6.0'
     gem.add_dependency 'thor'
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
